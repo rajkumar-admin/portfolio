@@ -98,6 +98,8 @@
   <a href="#experience">Experience</a>
   <a href="#skills">Skills</a>
   <a href="#certifications">Certifications</a>
+  <a href="#workshops">Workshops</a>
+  <a href="#visits">Visits</a>
 </nav>
 
 <section id="education">
@@ -147,192 +149,41 @@
   </div>
 </section>
 
+<section id="workshops">
+  <h2>Workshops & Conferences</h2>
+  <div class="section-content">
+    <p><strong>YI Celerate Learning Conclave – 2023</strong></p>
+    <ul>
+      <li>Engaged with industry leaders on entrepreneurship, innovation, and leadership strategies.</li>
+      <li>Expanded professional network and gained exposure to real-world success stories.</li>
+    </ul>
+    <p><strong>Safety in High Risk Activities – 2024</strong></p>
+    <ul>
+      <li>Managed crowd control and collaborated with the Health and Safety Department.</li>
+      <li>Recognized with a reward, certificate, and memento for contributions.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="visits">
+  <h2>Industrial Visits</h2>
+  <div class="section-content">
+    <p><strong>Parle Biscuit Factory (Patwari Bakers Pvt. Ltd) – March 12, 2022</strong></p>
+    <ul>
+      <li>Observed biscuit production processes from ingredient selection to packaging.</li>
+      <li>Learned about quality control and food safety automation.</li>
+    </ul>
+    <p><strong>Vijay Dairy and Farm Products Pvt Ltd – November 6, 2024</strong></p>
+    <ul>
+      <li>Explored milk processing, pasteurization, homogenization, and packaging techniques.</li>
+      <li>Understood cold chain logistics for dairy product shelf life.</li>
+    </ul>
+  </div>
+</section>
+
 <footer>
   <p>&copy; 2025 Raj Kumar A | Designed by Raj</p>
 </footer>
-
-</body>
-</html>
-from pathlib import Path
-from zipfile import ZipFile
-
-# Final customized HTML with no navbar and "VID" in the name heading
-customized_html = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Raj Kumar A - Professional Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary-color: #1f2937;
-      --secondary-color: #2563eb;
-      --background-color: #f9fafb;
-      --text-color: #111827;
-      --card-bg: #ffffff;
-    }
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background-color: var(--background-color);
-      color: var(--text-color);
-    }
-    header {
-      background: var(--secondary-color);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.4em;
-      animation: fadeIn 1s ease-in-out;
-    }
-    header img {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      animation: fadeIn 1s ease-in-out;
-    }
-    header p a {
-      color: #bfdbfe;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      background-color: var(--card-bg);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      opacity: 0;
-      transform: translateY(40px);
-      animation: slideIn 0.8s forwards;
-    }
-    section:nth-of-type(1) { animation-delay: 0.2s; }
-    section:nth-of-type(2) { animation-delay: 0.4s; }
-    section:nth-of-type(3) { animation-delay: 0.6s; }
-    section:nth-of-type(4) { animation-delay: 0.8s; }
-    section:nth-of-type(5) { animation-delay: 1s; }
-    section:nth-of-type(6) { animation-delay: 1.2s; }
-    section:nth-of-type(7) { animation-delay: 1.4s; }
-    section:nth-of-type(8) { animation-delay: 1.6s; }
-
-    h2 {
-      color: var(--secondary-color);
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      background-color: #f3f4f6;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #6b7280;
-    }
-    @keyframes slideIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Raj Kumar A 
-    <p>📞 6380273557 | 📧 <a href="mailto:rajkumarark22@gmail.com">rajkumarark22@gmail.com</a><br />
-      💼 <a href="https://www.linkedin.com/in/raj-kumar-a-/" target="_blank">LinkedIn</a>
-    </p>
-  </header>
-
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>MBA Graduate from SRM IST (Trichy), specialized in Business Analytics and Digital Marketing. Passionate about data-driven strategies and digital transformation. Skilled in Microsoft Office, SEO, and analytics tools.</p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MBA</strong>, SRM Institute of Science and Technology (2023–2025), CGPA: 9.20</li>
-        <li><strong>BBA</strong>, SRM Trichy Arts and Science College (2020–2023), 72%</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2>Internship Experience</h2>
-      <ul>
-        <li><strong>Andavar Group of Companies</strong> (June–July 2024): Learned marketing, quality control & supply chain operations.</li>
-        <li><strong>SRM Group of Institutions</strong> (Mar–May 2025): Focused on digital marketing & management strategies.</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
-        <li>Basic SEO and SEM concepts</li>
-        <li>Digital marketing & analytics tools</li>
-      </ul>
-    </section>
-
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AI for Beginners (HP LIFE)</li>
-        <li>Digital Business Skills (HP LIFE)</li>
-        <li>Business Analysis & Process Management (Coursera)</li>
-        <li>Google Ads for Beginners (Coursera)</li>
-        <li>Data Science & Analytics (HP LIFE)</li>
-        <li>Beginner SEO with SEMrush</li>
-      </ul>
-    </section>
-
-    <section id="activities">
-      <h2>Workshops & Conferences</h2>
-      <ul>
-        <li>Yi Celerate Learning Conclave 2023</li>
-        <li>Health & Safety Event (2024) – Received recognition for coordination</li>
-      </ul>
-    </section>
-
-    <section id="visits">
-      <h2>Industrial Visits</h2>
-      <ul>
-        <li>Parle Biscuit Factory (2022) – Biscuit manufacturing & quality control</li>
-        <li>Vijay Dairy & Farm Products (2024) – Dairy processing and cold chain management</li>
-      </ul>
-    </section>
-
-    <section id="languages">
-      <h2>Languages</h2>
-      <p>Tamil, English – Fluent (Reading, Speaking, Writing)</p>
-    </section>
-  </div>
-
-  <footer>
-    <p>© 2025 Raj Kumar A | Portfolio Website</p>
-  </footer>
 
 </body>
 </html>
