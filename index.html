@@ -1,3 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Kumar A - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #333;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1e1e2f;
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Raj Kumar A</h1>
+  <p>Marketing | Business Analytics | MBA Graduate</p>
+  <p><a href="mailto:ra9131@srmist.edu.in" style="color:#fff;">ra9131@srmist.edu.in</a> | <a href="https://www.linkedin.com/in/raj-kumar-a-/" style="color:#fff;" target="_blank">LinkedIn</a></p>
+</header>
+
+<nav>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+</nav>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="section-content">
+    <p><strong>MBA, Marketing & Business Analytics</strong><br>SRM Institute of Science and Technology, Trichy<br>CGPA: 9.20 (2023–2025)</p>
+    <br>
+    <p><strong>BBA, General</strong><br>SRM Trichy Arts & Science College<br>72% (2020–2023)</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="section-content">
+    <p><strong>Intern – SRM Group of Institutions</strong> (Mar–May 2025)</p>
+    <ul>
+      <li>Gained insights into management and digital marketing strategies.</li>
+    </ul>
+    <p><strong>Intern – Andavar Group of Companies</strong> (Jun–Jul 2024)</p>
+    <ul>
+      <li>Worked in packaged drinking water sector, focusing on SCM, QC, and marketing.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="section-content">
+    <ul>
+      <li>Microsoft Office: Word, Excel, PowerPoint</li>
+      <li>Languages: Tamil, English (Fluent in reading, writing, speaking)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="section-content">
+    <ul>
+      <li>AI for Beginners – HP Life</li>
+      <li>Intro to Digital Business Skills – HP Life</li>
+      <li>Business Analysis & Process Management – Coursera</li>
+      <li>Google Ads for Beginners – Coursera</li>
+      <li>Beginner SEO – SEMrush</li>
+      <li>Data Science & Analytics – HP Life</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Raj Kumar A | Designed by Raj</p>
+</footer>
+
+</body>
+</html>
 from pathlib import Path
 from zipfile import ZipFile
 
